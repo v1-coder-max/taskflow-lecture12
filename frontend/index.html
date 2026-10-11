@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow</title>
+  <script>
+    // Logged in → dashboard, otherwise → login
+    window.location.replace(localStorage.getItem('tm_token') ? '/dashboard.html' : '/login.html');
+  </script>
+</head>
+<body></body>
+</html>
